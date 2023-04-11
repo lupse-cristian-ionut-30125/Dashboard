@@ -1,0 +1,15 @@
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\bin\Debug\Proiect.exe.config
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\bin\Debug\Proiect.exe
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\bin\Debug\Proiect.pdb
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.csproj.AssemblyReference.cache
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.csproj.SuggestedBindingRedirects.cache
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.Main.resources
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.Properties.Resources.resources
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.csproj.GenerateResource.cache
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.csproj.CoreCompileInputs.cache
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.exe
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.pdb
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\bin\Debug\FontAwesome.Sharp.dll
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.csproj.CopyComplete
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.LoginForm.resources
+C:\Proiecte\Facultate\AnIII\SemII\II\TemeSemestru\WindowsForm\Proiect\Proiect\obj\Debug\Proiect.ChangePass.resources
