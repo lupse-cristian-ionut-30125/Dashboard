@@ -42,9 +42,11 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelWelcome = new System.Windows.Forms.Panel();
-            this.welcomeLabel = new System.Windows.Forms.Label();
-            this.iconInnerForm = new FontAwesome.Sharp.IconPictureBox();
             this.labelInnerForm = new System.Windows.Forms.Label();
+            this.iconInnerForm = new FontAwesome.Sharp.IconPictureBox();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -280,30 +282,6 @@
             this.panelWelcome.Size = new System.Drawing.Size(859, 70);
             this.panelWelcome.TabIndex = 1;
             // 
-            // welcomeLabel
-            // 
-            this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.welcomeLabel.Location = new System.Drawing.Point(273, 20);
-            this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(92, 31);
-            this.welcomeLabel.TabIndex = 0;
-            this.welcomeLabel.Text = "label1";
-            // 
-            // iconInnerForm
-            // 
-            this.iconInnerForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(171)))), ((int)(((byte)(85)))));
-            this.iconInnerForm.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconInnerForm.IconColor = System.Drawing.Color.White;
-            this.iconInnerForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconInnerForm.IconSize = 42;
-            this.iconInnerForm.Location = new System.Drawing.Point(9, 20);
-            this.iconInnerForm.Name = "iconInnerForm";
-            this.iconInnerForm.Size = new System.Drawing.Size(42, 47);
-            this.iconInnerForm.TabIndex = 1;
-            this.iconInnerForm.TabStop = false;
-            // 
             // labelInnerForm
             // 
             this.labelInnerForm.AutoSize = true;
@@ -315,11 +293,55 @@
             this.labelInnerForm.TabIndex = 2;
             this.labelInnerForm.Text = "Home";
             // 
+            // iconInnerForm
+            // 
+            this.iconInnerForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(70)))));
+            this.iconInnerForm.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconInnerForm.IconColor = System.Drawing.Color.White;
+            this.iconInnerForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconInnerForm.IconSize = 42;
+            this.iconInnerForm.Location = new System.Drawing.Point(9, 20);
+            this.iconInnerForm.Name = "iconInnerForm";
+            this.iconInnerForm.Size = new System.Drawing.Size(42, 47);
+            this.iconInnerForm.TabIndex = 1;
+            this.iconInnerForm.TabStop = false;
+            // 
+            // welcomeLabel
+            // 
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.welcomeLabel.Location = new System.Drawing.Point(273, 20);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(92, 31);
+            this.welcomeLabel.TabIndex = 0;
+            this.welcomeLabel.Text = "label1";
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(70)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(200, 70);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(859, 10);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(200, 80);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(859, 479);
+            this.panelDesktop.TabIndex = 3;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1059, 559);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelWelcome);
             this.Controls.Add(this.panelMenu);
             this.Name = "Main";
@@ -353,6 +375,8 @@
         private FontAwesome.Sharp.IconButton iconLogOut;
         private System.Windows.Forms.Label labelInnerForm;
         private FontAwesome.Sharp.IconPictureBox iconInnerForm;
+        private System.Windows.Forms.Panel panelShadow;
+        private System.Windows.Forms.Panel panelDesktop;
     }
 }
 

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using Proiect.inneForms;
+using Proiect.innerForms;
 
 namespace Proiect
 {
@@ -16,6 +18,7 @@ namespace Proiect
         // Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentInnerForm;
 
         public Main(string username)
         {
@@ -74,34 +77,57 @@ namespace Proiect
             }
         }
 
+        private void OpenInnerForm(Form innerForm)
+        { 
+            if(currentInnerForm != null)
+            {
+                currentInnerForm.Close();
+            }
+            currentInnerForm = innerForm;
+            innerForm.TopLevel = false;
+            innerForm.FormBorderStyle = FormBorderStyle.None;
+            innerForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(innerForm);
+            panelDesktop.Tag = innerForm;
+            innerForm.BringToFront();
+            innerForm.Show();
+            labelInnerForm.Text = innerForm.Text;   
+        }
+
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenInnerForm(new DashboardForm());
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenInnerForm(new OrdersForm());
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenInnerForm(new ProductsForm());
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenInnerForm(new CustomersForm());
         }
 
         private void btnMarketing_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenInnerForm(new MarketingForm());
         }
 
         private void btnAnalytics_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenInnerForm(new Analytics());
         }
 
         private void iconLogOut_Click(object sender, EventArgs e)

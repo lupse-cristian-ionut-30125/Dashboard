@@ -35,6 +35,7 @@
             this.textBoxChangePass = new System.Windows.Forms.TextBox();
             this.textBoxRepeatPass = new System.Windows.Forms.TextBox();
             this.btnChangePassword = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +88,7 @@
             this.textBoxChangePass.Name = "textBoxChangePass";
             this.textBoxChangePass.Size = new System.Drawing.Size(180, 20);
             this.textBoxChangePass.TabIndex = 4;
+            this.textBoxChangePass.UseSystemPasswordChar = true;
             // 
             // textBoxRepeatPass
             // 
@@ -94,6 +96,7 @@
             this.textBoxRepeatPass.Name = "textBoxRepeatPass";
             this.textBoxRepeatPass.Size = new System.Drawing.Size(180, 20);
             this.textBoxRepeatPass.TabIndex = 5;
+            this.textBoxRepeatPass.UseSystemPasswordChar = true;
             // 
             // btnChangePassword
             // 
@@ -101,7 +104,7 @@
             this.btnChangePassword.FlatAppearance.BorderSize = 0;
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.ForeColor = System.Drawing.Color.White;
-            this.btnChangePassword.Location = new System.Drawing.Point(115, 197);
+            this.btnChangePassword.Location = new System.Drawing.Point(28, 196);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(139, 29);
             this.btnChangePassword.TabIndex = 6;
@@ -109,12 +112,27 @@
             this.btnChangePassword.UseVisualStyleBackColor = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(171)))), ((int)(((byte)(85)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(229, 196);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(139, 29);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // ChangePass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(174)))));
             this.ClientSize = new System.Drawing.Size(396, 247);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.textBoxRepeatPass);
             this.Controls.Add(this.textBoxChangePass);
@@ -139,5 +157,6 @@
         private System.Windows.Forms.TextBox textBoxChangePass;
         private System.Windows.Forms.TextBox textBoxRepeatPass;
         private System.Windows.Forms.Button btnChangePassword;
+        private System.Windows.Forms.Button btnBack;
     }
 }
